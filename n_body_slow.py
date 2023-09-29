@@ -76,9 +76,6 @@ for timestep in range(0, endtime, dt): #for each timestep, calculate each bodies
 
         planet.positions.append((newPositionX,newPositionY,newPositionZ))
 
-print(planetList[3].positions)
-print(planetList[5].mass)
-
 for planet in planetList:
     for pair in planet.positions:
         planet.posX.append(pair[0])
@@ -132,23 +129,5 @@ ax = fig.add_subplot(111, projection='3d')
 ani = FuncAnimation(fig, update, frames=range(0, n_points, 100), repeat=False, interval=1)
 
 plt.show()
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+#end
